@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Report of loss</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>User information</h2>
+            <a>name: Hong Gil Dong</a><br>
+            <a>phone number: 010-1234-5678</a>
+        </div>
+        <div class="main">
+            <div>
+                <button onclick="find()">FIND</button>
+            </div>
+            <div>
+                <button onclick="stop()">STOP</button>
+            </div>
+        </div>
+        <div id="result">
+        </div>
+    </div>
+    <script>
+        function find() {
+            fetch("/HongGilDong/1234/find")
+            .then(response => response.text())
+            .then(data=> {
+                console.log(data);
+                let result = document.querySelector("#result");
+                if(data == "ok") {
+                    result.innerHTML = "<h1>Looking for a walking stick...</h1>";
+                }else {
+                    result.innerHTML = "<h1>error</h1>";
+                }
+            });
+        }
+        function stop() {
+            fetch("/HongGilDong/1234/stop")
+            .then(response => response.text())
+            .then(data=> {
+                console.log(data);
+                let result = document.querySelector("#result");
+                if(data == "ok") {
+                    result.innerHTML = "<h1>Stop looking.</h1>";
+                }else {
+                    result.innerHTML = "<h1>error</h1>";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

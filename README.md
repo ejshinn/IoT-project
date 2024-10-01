@@ -15,13 +15,13 @@
 - 웹 페이지에서 STOP 버튼 클릭 -> LED OFF, 부저 OFF, OLED CLEAR
 
 ## 💡회로도
-<img>![1](https://github.com/user-attachments/assets/3663025b-d1e0-4c03-a1dd-d760f482eab7)
+<img src="https://github.com/user-attachments/assets/3663025b-d1e0-4c03-a1dd-d760f482eab7" width="70%" height="30%"></img>
 
 ## 🌐웹 페이지
 #### FIND 버튼 클릭
-![2](https://github.com/user-attachments/assets/d7485fb7-1d6f-4982-b744-2fc6fac470dc)
+<img src="https://github.com/user-attachments/assets/d7485fb7-1d6f-4982-b744-2fc6fac470dc" width="70%" height="30%"></img>
 
 </br>
 
 #### STOP 버튼 클릭
-![3](https://github.com/user-attachments/assets/29a67925-a872-4845-8ee7-4e52b4ac6ecb)
+<img src="https://github.com/user-attachments/assets/29a67925-a872-4845-8ee7-4e52b4ac6ecb" width="70%" height="30%"></img>
